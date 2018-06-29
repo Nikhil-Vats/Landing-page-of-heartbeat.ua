@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heartbeat agency — apps, websites, interface design and consulting</title>
+    <link rel="stylesheet" href="landingstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">     
+</head>
+<body>
+<!---------------------CANVAS BG---------------------------->
+        <canvas id="myCanvas" width="1300" height="700" >
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+<!---------------------LOGO--------------------------------->    
+        <a href="#"><img class="logo" src="logo.60e99242.svg"></a>
+<!----------------------NAV  BAR---------------------------->    
+        <ul>
+            <li><a href="#home"  class="normal">projects</a></li>
+            <li ><a href="#news" class="normal">customer story</a></li>
+            <li ><a href="#contact" class="normal">meet our team</a></li>
+            <li><a href="#about" class="normal">process</a></li>
+            <li ><a href="#about" class="highlighted">let's talk</a></li>
+        </ul>
+<!------------------DESCRIPTION----------------------------->
+<div >
+        <pre id="container">Your product is great.
+The way it looks isn’t.
+<a id="helper" href="#">We can help.</a></pre>
+        
+        </div>    
+       <p class="description">We analyze your business and your product to help them look — and work — their best. This will help you convert leads into paying customers and speed the growth of your company.</p>
+
+
+        <button id="btn" href="#" onmouseover="mouseOver()" onmouseout="mouseOut()">check our latest project</button>
+<!-------------------SOCIAL TAGS---------------------------->        
+        <div class="social">
+        <img src='dribbble.5f0f0d90.svg'>
+        <a href="#">Dribble</a>
+        <img src="behance.b65638c6.svg">    
+        <a href="#">Behance</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Press</a>
+        </div>
+<!-------------------JAVASCRIPT----------------------------->    
+<script>
+       
+        function mouseOver() 
+            {
+                var button1=document.getElementById('btn');
+                button1.style.backgroundColor='white';
+                button1.style.color='black';
+            }
+        function mouseOut() 
+            {
+                var button1=document.getElementById('btn');
+                button1.style.backgroundColor='black';
+                button1.style.color='white';
+            }
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+//FILL GREEN            
+        ctx.arc(-400, -250, 750, 0, 2 * Math.PI);
+        ctx.strokeStyle='lightgrey';
+        ctx.fillStyle = '#62E6AC';
+        ctx.fill();
+        ctx.stroke();
+//LINE 1
+        ctx.beginPath();
+        ctx.arc(-400, -250, 900, 0, 2 * Math.PI);
+        ctx.strokeStyle='lightgrey';
+        ctx.stroke();
+//LINE 2
+        ctx.arc(-400, -250, 1000, 0, 2 * Math.PI);
+        ctx.strokeStyle='lightgrey';
+        ctx.stroke();
+
+</script> 
+</body>
+</html>
